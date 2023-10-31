@@ -1,0 +1,40 @@
+theme = 'catppuccin_macchiato'
+
+[editor]
+line-number = "relative"
+cursorline = true
+auto-completion = true
+completion-trigger-len = 2
+auto-info = true
+bufferline = "multiple"
+color-modes = true
+text-width = 80
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = true
+
+[editor.statusline]
+left = ["mode","version-control", "diagnostics"]
+center = ["file-name", "file-modification-indicator"]
+right = ["spinner", "selections", "file-type", "position-percentage", "position"]
+
+[editor.lsp]
+enable = true
+display-messages = true
+auto-signature-help = true
+
+[editor.indent-guides]
+render = true
+#character = "|"
+skip-levels = 0
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+C-g = ":sh tmux popup -d \"#{pane_current_path}\" -xC -yC -w80% -h80% -E lazygit"
