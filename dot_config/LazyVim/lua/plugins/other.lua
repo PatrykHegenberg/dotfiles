@@ -7,4 +7,15 @@ return {
     "willothy/wezterm.nvim",
     config = true,
   },
+  {
+    "itchyny/calendar.vim",
+  },
+  {
+    "folke/zen-mode.nvim",
+    opts = {},
+  },
+  {
+    "folke/twilight.nvim",
+    opts = {},
+  },
 }
